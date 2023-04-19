@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">{JDRT}</a>
+            </div>
+            <nav id ="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars fa-flip"></i>
+            </div>
+        </header>
+    </div>
+
+<!--  SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div>
+                <img src="./img/photostudio-3-designify.png" alt="">
+            </div>
+            <h1>JONATHAN RODRIGUEZ</h1>
+            <h2>Desarrollador web Full Stack</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/jonathan-david-rodriguez-77778880/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/davidterry.rodriguez"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/davidterry.rodriguez/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://api.whatsapp.com/send?phone=+573174263312"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/david2492"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    
+<!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><span>Hola, soy Jonathan Rodriguez. </span>
+                Soy tecnologo en desarrollo web e ingeniero 
+                de sistemas en formación, dedicado y apasionado por
+                los retos, me distingo por mis capacidades colaborativas y
+                responsables, además soy dedicado y autodidacta. Realizo procesos de manera
+                eficiente y eficaz para cumplir con las metas y objetivos
+                planteados, me adapto a cualquier tipo de trabajo, me motivan mis ganas de seguir
+                aprendiendo y mejorando mis habilidades día tras día.
+            </p>
+            <div class="fila">
+            <!--    datos personales -->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24-04-1992
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            3174263312
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            t3rry2492@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.netifli.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            Calle 10 No 6 - 36 Maria Isabel- Pasto - Nariño
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador web Junior - Freelance</span>
+                        </li>
+                    </ul>
+                </div>
+            <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a download="Curriculum-JDR" href="curriculum vitae cv.pdf">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </a>
+            </button>
+        </div>
+    </section>
+<!-- SECCION SKILL -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <!-- technical Skills -->
+            <div class="fila">
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Boostrap</span>
+                        <div class="barra-skill">
+                            <div class="progreso boostrap">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React.js</span>
+                        <div class="barra-skill">
+                            <div class="progreso react">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node.js</span>
+                        <div class="barra-skill">
+                            <div class="progreso node">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso csharp">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQLserver2005 y 2008 R2</span>
+                        <div class="barra-skill">
+                            <div class="progreso sqlserver">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PosgreSQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso posgresql">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Github</span>
+                        <div class="barra-skill">
+                            <div class="progreso github">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- profesional Skills  -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Motivacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso motivacion">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso liderazgo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Respeto. Paciencia y empatia</span>
+                        <div class="barra-skill">
+                            <div class="progreso respeto">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad analitica y solucion de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso capacidad">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ayudar a superar los mayores retos</span>
+                        <div class="barra-skill">
+                            <div class="progreso ayuda">
+                                <span>96%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+<!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <span class="casa">Universidad Mariana</span>
+                        <span class="fecha">2012-2017</span>
+                        <p>Contaduria Publica</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <span class="casa">Academlo Bootcamp</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>Desarrollador web</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <span class="casa">Universidad abierta y a distancia (UNAD)</span>
+                        <span class="fecha">2022-2026</span>
+                        <p>Contaduria Publica</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <span class="casa">Software y soluciones Ltda.</span>
+                        <span class="fecha">2013-2022</span>
+                        <p>Soporte técnico, asesorías y capación en software contable</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="casa">Disrover Ltda</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>Contaduria Publica</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./img/Proyecto_e-commerce.png" alt="">
+                    <div class="overlay">
+                        <h3>E-COMMERCE</h3>
+                        <P>Fotografia</P>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/Proyecto_pokedex.png" alt="">
+                    <div class="overlay">
+                        <h3>POKEDEX</h3>
+                        <P>Fotografia</P>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/Proyecto_rick-and-morty.png" alt="">
+                    <div class="overlay">
+                        <h3>RICK AND MORTY</h3>
+                        <P>Fotografia</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Numero Telefonico">
+                    <input type="text" placeholder="Direccion de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- mapa -->
+                <div class="col">
+                    <img src="./img/localizacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Colombia-Nariño-Pasto, Calle 10 No 6 - 36 Maria Isabel 
+                            </li>
+                            <li>
+                                <i class="fa-duotone fa-mobile"></i>
+                                Llamanos: 3174263312 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: t3rry2492@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- FOOTER -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.linkedin.com/in/jonathan-david-rodriguez-77778880/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/davidterry.rodriguez"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/davidterry.rodriguez/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://api.whatsapp.com/send?phone=+573174263312"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com/david2492"><i class="fa-brands fa-github"></i></a>
+    </div>
+</footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
