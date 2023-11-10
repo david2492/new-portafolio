@@ -356,6 +356,16 @@ html {
     100%{width: 80%;}
 }
 
+.skills .skill .sass {
+    width: 0%;
+    animation: 2s boostrap forwards;
+}
+
+@keyframes sass {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
 .skills .skill .react {
     width: 0%;
     animation: 2s react forwards;
@@ -363,7 +373,7 @@ html {
 
 @keyframes react {
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 70%;}
 }
 
 
@@ -374,7 +384,7 @@ html {
 
 @keyframes node {
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .csharp {
